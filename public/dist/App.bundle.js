@@ -127,7 +127,7 @@ exports.$$ = $$;
 /* 2 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: Error\n    at /Users/raghib/Desktop/Desktop/Learn-Node/dang-thats-delicious/node_modules/webpack/lib/NormalModule.js:141:35\n    at /Users/raghib/Desktop/Desktop/Learn-Node/dang-thats-delicious/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/raghib/Desktop/Desktop/Learn-Node/dang-thats-delicious/node_modules/loader-runner/lib/LoaderRunner.js:200:19\n    at /Users/raghib/Desktop/Desktop/Learn-Node/dang-thats-delicious/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:70:14\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)\n    at process._tickCallback (internal/process/next_tick.js:180:9)");
 
 /***/ }),
 /* 3 */
