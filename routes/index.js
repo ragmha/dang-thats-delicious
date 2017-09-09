@@ -1,4 +1,5 @@
 const express = require('express');
+
 const router = express.Router();
 
 const storeController = require('../controllers/storeController');
@@ -14,13 +15,13 @@ router.post(
   '/add',
   storeController.upload,
   catchErrors(storeController.resize),
-  catchErrors(storeController.createStore)
+  catchErrors(storeController.createStore),
 );
 router.post(
   '/add/:id',
   storeController.upload,
   catchErrors(storeController.resize),
-  catchErrors(storeController.updateStore)
+  catchErrors(storeController.updateStore),
 );
 
 router.get('/stores', catchErrors(storeController.getStores));
@@ -40,7 +41,7 @@ router.post(
   '/register',
   userController.validateRegister,
   catchErrors(userController.register),
-  authController.login
+  authController.login,
 );
 
 router.get('/account', authController.isLoggedIn, userController.account);
@@ -50,7 +51,10 @@ router.get('/account/reset/:token', catchErrors(authController.reset));
 router.post(
   '/account/reset/:token',
   authController.confirmedPasswords,
-  catchErrors(authController.update)
+  catchErrors(authController.update),
 );
+
+// API
+router.get('/api/search', catchErrors(storeController.searchStores));
 
 module.exports = router;
