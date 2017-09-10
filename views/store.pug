@@ -1,7 +1,8 @@
 extend layout
 
+include mixins/_reviewForm
+
 block content
-    pre= h.dump(store)
     .single
         .single__hero
             img.single__image(src=`/uploads/${store.photo || 'store.png'}`)
@@ -18,3 +19,6 @@ block content
                     li.tag 
                         a.tag__link(href=`/tags/${tag}`)
                             span.tag__text ##{tag}
+
+        if user 
+            +reviewForm(store)
