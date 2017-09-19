@@ -2,7 +2,7 @@
 
 ## Getting Started 🚀
 
-* ```$ git clone https://github.com/ragmha/currency-folio```
+* ```$ git clone https://github.com/ragmha/dang-thats-delicious```
 
 * ```$ yarn```
 
